@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+@font-face {
+    font-family: "Kenyan Coffee Regualar BI";
+    src: url(i/font.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html {
+    background-color: #111;
+    font-family: Arial Black;
+    font-style: italic;
+}
+
+html:before {
+    -moz-filter: blur(15px) brightness(85%);
+    -ms-filter: blur(15px) brightness(85%);
+    -o-filter: blur(15px) brightness(85%);
+    -webkit-filter: blur(15px) brightness(85%);
+    background-image: url(i/art.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    filter: blur(15px) brightness(85%);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+body {
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 850px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+a.header {
+    text-decoration: none;
+    font-family: "Kenyan Coffee Regualar BI";
+    font-size: 50px;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul {
+    background-color: rgba(255, 255, 255, 0.1);
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    cursor: pointer;
+    display: block;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+    margin: 10px;
+}
+
+li.contact {
+    float: right;
+}
+
+div.body {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    right: 10px;
+    width: 70px;
+}
+
+img.logo {
+    float: right;
+    height: auto;
+    margin: 5px;
+    width: 70px;
+}
+
+img.art {
+    height: auto;
+    width: 100%;
+}
+
+img.store {
+    height: 5%;
+    margin-top: 12px;
+}
+
+
+div.artl {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+div.infor {
+    float: right;
+    font-size: 18px;
+    margin-top: 10%;
+    width: 45%;
+}
+
+img.social {
+    height: 50px;
+}
+
+div.social {
+    margin: 50px;
+}
+
+div.error {
+    display: none;
+}
+
+@media screen and (max-width: 648px) {
+    li a {
+        padding: 10px 25px;
+    }
+
+    h2 {
+        font-size: 20
+    }
+
+    div.details {
+        font-size: 11px;
+    }
+
+    img.store {
+        height: 5vw;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    li a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    li a {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 528px) {
+    li a {
+        padding: 10px 35px;
+        font-size: 15
+    }
+    a.header {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    li a {
+        padding: 10px 25px;
+    }
+
+    h2 {
+        font-size: 15
+    }
+
+    div.details {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    li a {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    li a {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 12
+    }
+
+    div.details {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 329px) {
+    li a {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    div.error {
+        display: block;
+        height: auto;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: black;
+    }
+    div.error:before {
+        -moz-filter: blur(15px) brightness(85%);
+        -ms-filter: blur(15px) brightness(85%);
+        -o-filter: blur(15px) brightness(85%);
+        -webkit-filter: blur(15px) brightness(85%);
+        background-image: url(i/art.jpg);
+        background-size: cover;
+        content: "";
+        display: block;
+        filter: blur(15px) brightness(85%);
+        height: 100%;
+        left: 0;
+        right: 0;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+    p.error {
+        padding: 15;
+        margin-top: 25vh;
+    }
+}
