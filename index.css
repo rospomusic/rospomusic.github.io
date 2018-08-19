@@ -12,7 +12,7 @@
 }
 
 html {
-    background-color: #111;
+    background-color: black;
     font-family: 'Karla', sans-serif;
     font-style: italic;
 }
@@ -94,7 +94,6 @@ li.contact {
 
 div.body {
     margin: 20px;
-    padding-top: 20px;
 }
 
 footer {
@@ -111,30 +110,6 @@ img.logo {
     width: 70px;
 }
 
-img.art {
-    height: auto;
-    width: 100%;
-}
-
-img.store {
-    height: 5%;
-    margin-top: 12px;
-}
-
-
-div.artl {
-    display: block;
-    float: left;
-    width: 50%;
-}
-
-div.infor {
-    float: right;
-    font-size: 18px;
-    margin-top: 10%;
-    width: 45%;
-}
-
 img.social {
     height: 50px;
 }
@@ -143,8 +118,40 @@ div.social {
     margin: 50px;
 }
 
-div.error {
+div.error,
+div.storesb {
     display: none;
+}
+
+p.track1,
+p.track2 {
+    font-family: "Kenyan Coffee Regualar BI";
+    font-size: 58px;
+    text-align: center;
+}
+
+img.art {
+    width: 100%;
+}
+
+div.infol,
+div.infor {
+    margin-top: 30%;
+}
+
+img.storel,
+img.storer,
+img.store {
+    height: 50px;
+}
+
+img.store {
+    margin-top: 3%
+}
+
+div.music1 {
+    display: grid;
+    grid-template-columns: 50% auto;
 }
 
 @media screen and (max-width: 648px) {
@@ -152,24 +159,33 @@ div.error {
         padding: 10px 25px;
     }
 
-    h2 {
-        font-size: 20
-    }
-
     div.details {
-        font-size: 11px;
+        font-size: 16px;
+    }
+    
+    div.infol,
+    div.infor {
+        margin-top: 22%;
     }
 
-    img.store {
-        height: 5vw;
-        margin-top: 12px;
-    }
 }
 
 @media screen and (max-width: 588px) {
     li a {
         padding: 10px 20px;
     }
+
+    img.storel,
+    img.storer,
+    img.store {
+        height: 40px;
+    }
+
+    div.infol,
+    div.infor {
+        margin-top: 20%;
+    }
+
 }
 
 @media screen and (max-width: 558px) {
@@ -181,24 +197,28 @@ div.error {
 @media screen and (max-width: 528px) {
     li a {
         padding: 10px 35px;
-        font-size: 15
+        font-size: 17;
     }
     a.header {
-        font-size: 36px;
+        font-size: 45px;
     }
+
+    img.storel,
+    img.storer,
+    img.store {
+        height: 30px;
+    }
+
+    p.track1,
+    p.track2 {
+        font-size: 48px;
+    }
+
 }
 
 @media screen and (max-width: 499px) {
     li a {
         padding: 10px 25px;
-    }
-
-    h2 {
-        font-size: 15
-    }
-
-    div.details {
-        font-size: 8px;
     }
 }
 
@@ -206,23 +226,41 @@ div.error {
     li a {
         padding: 10px 15px;
     }
+
+    img.storel,
+    img.storer,
+    img.store {
+        height: 30px;
+    }
+
+    div.infol,
+    div.infor {
+        margin-top: 15%;
+    }
 }
 
 @media screen and (max-width: 379px) {
     li a {
-        font-size: 12px;
+        font-size: 15px;
+    }
+    img.storel,
+    img.storer,
+    img.store {
+        height: 23px;
     }
 
-    h2 {
-        font-size: 12
+    p.track1,
+    p.track2 {
+        font-size: 40px;
     }
-
-    div.details {
-        font-size: 8px;
+    
+    div.infol,
+    div.infor {
+        margin-top: 10%;
     }
 }
 
-@media screen and (max-width: 329px) {
+@media screen and (max-width: 350px) {
     li a {
         padding: 10px 10px;
     }
